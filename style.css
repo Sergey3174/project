@@ -12,14 +12,25 @@ body {
 .container {
     max-width: 750px;
     margin: auto;
-    padding-top: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
 }
 
-.avatar {
+
+.circle-avatar {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
     width: 300px;
-    border-radius: 20px;
-    box-shadow: 4px 4px 14px rgba(0, 0, 0, .5)
-}
+    height: 250px;
+ 
+  }
+  .circle-avatar img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
 
 .info {
     margin-bottom: 20px;
@@ -109,6 +120,10 @@ font-family: inherit;
     color: #86898f;
 }
 
+.form {
+    background: #ffffff;
+}
+
 .form h3 {
     text-align: center;
 }
@@ -126,9 +141,7 @@ font-family: inherit;
 }
 
 
-.form-row .form-group:last-child {
- 
-}
+
 
 
 .form-group label{
